@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lavil Saldanha · Data, ML &amp; Stories</title>
+  <meta name="description" content="Lavil Saldanha builds and deploys machine learning systems in Sydney, after four years and 786 articles as a cricket writer and commentator at Sportskeeda.">
+  <meta name="theme-color" content="#0b0b1a">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lavil Saldanha · Data, ML & Stories">
+  <meta property="og:description" content="Data science at UTS, Sydney. ML systems from raw data to deployed APIs, plus 786 articles from four years in sports media.">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="blobs" aria-hidden="true">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+  </div>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Lavil Saldanha, back to top">LS<span>.</span></a>
+      <nav aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#writing">Writing</a>
+        <a href="#journey">Journey</a>
+        <a class="nav-cta" href="#contact">Say hi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero wrap" id="top">
+      <p class="eyebrow"><span class="pulse" aria-hidden="true"></span>Open to data &amp; ML roles in Sydney</p>
+      <h1>Hi, I'm <span class="grad">Lavil Saldanha.</span></h1>
+      <p class="lede">I turn messy data into <mark class="hl hl-a">working models</mark>, ship them as <mark class="hl hl-b">live APIs</mark>, and explain them like a <mark class="hl hl-c">match commentary</mark>.</p>
+      <div class="cta">
+        <a class="btn btn-grad" href="#work">See my work</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/lavil-saldanha/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn btn-ghost" href="https://github.com/Lavil88" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+
+      <ul class="stats" aria-label="At a glance">
+        <li class="stat s1"><strong data-count="5">5</strong><span>ML projects built</span></li>
+        <li class="stat s2"><strong>1</strong><span>IEEE paper published</span></li>
+        <li class="stat s3"><strong data-count="786">786</strong><span>Sportskeeda articles</span></li>
+        <li class="stat s4"><strong data-count="25">25</strong><span>person team led</span></li>
+      </ul>
+    </section>
+
+    <!-- About -->
+    <section class="wrap section about reveal" aria-labelledby="about-h">
+      <div class="about-card">
+        <h2 id="about-h">Two careers, one skill: <span class="grad">making complex things clear.</span></h2>
+        <div class="about-cols">
+          <p>I'm studying a <strong>Master of Data Science &amp; Innovation at UTS</strong> (graduating June 2027). I build machine learning systems end to end: pulling raw data from public APIs, engineering features, tuning models, and deploying them as services other people can call.</p>
+          <p>Before that, I spent <strong>four years at Sportskeeda</strong> as a cricket writer and commentator, delivering live multi-sport commentary and leading a 25-person team. Live deadlines taught me to work fast and explain clearly, which is exactly what a model needs when it meets real people.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="wrap section" id="work" aria-labelledby="work-h">
+      <div class="head reveal">
+        <p class="kicker k-violet">01 · Work</p>
+        <h2 id="work-h">Things I've built</h2>
+        <p class="sub">Mostly UTS coursework, all shipped end to end. Code for private repos is available on request.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card c-amber wide reveal">
+          <div class="card-top">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 17l5-5 4 4 8-9" /><path d="M15 7h5v5" /></svg>
+            </span>
+            <span class="pill">UTS · Advanced ML · Oct 2026</span>
+          </div>
+          <h3>Crypto trend forecasting API</h3>
+          <p>My service in a four-service crypto analytics platform. An <strong>XGBoost</strong> classifier predicts a token's trend 7 days ahead, from Strong Downtrend to Strong Uptrend, for 8 tokens using daily Kraken market data.</p>
+          <p>The twist: it depends on two teammates' APIs, so I trained it with <strong>simulated outages</strong>. It calls both peers in parallel with a timeout and still predicts when one goes down.</p>
+          <div class="bars" role="img" aria-label="Macro-F1: 0.416 with all services up, 0.422 with teammate A down, 0.363 with teammate B down, 0.293 with both down">
+            <div class="bar"><span>All up</span><i style="--v:.416"></i><b>0.416</b></div>
+            <div class="bar"><span>A down</span><i style="--v:.422"></i><b>0.422</b></div>
+            <div class="bar"><span>B down</span><i style="--v:.363"></i><b>0.363</b></div>
+            <div class="bar"><span>Both down</span><i style="--v:.293"></i><b>0.293</b></div>
+            <p class="bar-cap">Macro-F1 on the test period. 60 Optuna trials × 3 walk-forward folds.</p>
+          </div>
+          <ul class="tags"><li>Python</li><li>XGBoost</li><li>Optuna</li><li>FastAPI</li><li>pandas</li></ul>
+        </article>
+
+        <article class="card c-sky reveal">
+          <div class="card-top">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.5-7.97A6 6 0 0 1 18 9a4.5 4.5 0 0 1 0 9z" /></svg>
+            </span>
+            <span class="pill">UTS · Sep 2026</span>
+          </div>
+          <h3>Weather Intelligence API</h3>
+          <p>Two models on <strong>25 years</strong> of hourly Sydney weather: a Climate Comfort Index forecast 1–3 days ahead and a 4-class hazard classifier 7 days out. Dockerised and live on Render.</p>
+          <ul class="tags"><li>scikit-learn</li><li>FastAPI</li><li>Docker</li></ul>
+          <a class="card-link" href="https://weather-intelligence-api-g16n.onrender.com/docs" target="_blank" rel="noopener">Try the live API ↗</a>
+          <small class="hint">Free tier, so the first load can take ~30s.</small>
+        </article>
+
+        <article class="card c-pink reveal">
+          <div class="card-top">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 9h13v4a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6z" /><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17" /><path d="M8 3v3M12 3v3" /></svg>
+            </span>
+            <span class="pill">Personal · Oct 2026</span>
+          </div>
+          <h3>BrewView: café search by vibe</h3>
+          <p>Find a Philadelphia café by what reviewers actually say. Semantic search over <strong>382,400</strong> review sentences, ranked on aspect fit, relevance and sentiment, with a local LLM writing grounded one-line summaries.</p>
+          <ul class="tags"><li>NLP</li><li>Embeddings</li><li>Streamlit</li><li>LLM</li></ul>
+        </article>
+
+        <article class="card c-orange reveal">
+          <div class="card-top">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" /></svg>
+            </span>
+            <span class="pill">UTS · Kaggle · Aug–Sep 2026</span>
+          </div>
+          <h3>NBA career longevity package</h3>
+          <p>Will a college player last 3+ NBA seasons? I built and published a tested Python package to TestPyPI for the team's experiments: <strong>36 tests, ~99% coverage</strong>.</p>
+          <ul class="tags"><li>pytest</li><li>Packaging</li><li>AUPRC</li></ul>
+        </article>
+
+        <article class="card c-lime reveal">
+          <div class="card-top">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2" /><path d="M3 10h18M7 15h4" /></svg>
+            </span>
+            <span class="pill">IEEE ICICI 2024</span>
+          </div>
+          <h3>AI-driven credit scoring</h3>
+          <p>ML models that score credit from 6–12 months of bank data, opening a route to loans for self-employed people with no credit history. <strong>Published with IEEE.</strong></p>
+          <ul class="tags"><li>Research</li><li>scikit-learn</li></ul>
+          <a class="card-link" href="https://ieeexplore.ieee.org/document/10675702" target="_blank" rel="noopener">Read the paper ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Writing -->
+    <section class="wrap section" id="writing" aria-labelledby="writing-h">
+      <div class="head reveal">
+        <p class="kicker k-pink">02 · Writing</p>
+        <h2 id="writing-h">786 stories from the commentary box</h2>
+        <p class="sub">Four years covering cricket at Sportskeeda: breaking news, explainers, playoff maths and the occasional emotional final. A few favourites:</p>
+      </div>
+
+      <div class="articles">
+        <a class="article a1 reveal" href="https://www.sportskeeda.com/cricket/news-explained-what-new-two-ball-rule-odis" target="_blank" rel="noopener">
+          <span class="a-tag">Explainer</span>
+          <h3>Explained: What is the new two-ball rule for ODIs?</h3>
+          <span class="a-date">Jun 2025</span>
+        </a>
+        <a class="article a2 reveal" href="https://www.sportskeeda.com/cricket/news-rcb-vs-pbks-ipl-2025-final-breaks-record-becomes-watched-t20-final-history" target="_blank" rel="noopener">
+          <span class="a-tag">Data story</span>
+          <h3>RCB vs PBKS IPL 2025 final becomes the most watched T20 final in history</h3>
+          <span class="a-date">Jun 2025</span>
+        </a>
+        <a class="article a3 reveal" href="https://www.sportskeeda.com/cricket/news-ipl-2025-playoffs-how-can-rcb-finish-top-two-points-table" target="_blank" rel="noopener">
+          <span class="a-tag">Scenarios</span>
+          <h3>IPL 2025 playoffs: How can RCB finish in the top two?</h3>
+          <span class="a-date">May 2025</span>
+        </a>
+        <a class="article a4 reveal" href="https://www.sportskeeda.com/cricket/news-this-one-years-heartbreaks-disappointment-virat-kohli-pens-emotional-note-rcb-win-ipl-2025-title-in-pictures" target="_blank" rel="noopener">
+          <span class="a-tag">Feature</span>
+          <h3>Virat Kohli pens an emotional note after RCB win the IPL 2025 title</h3>
+          <span class="a-date">Jun 2025</span>
+        </a>
+      </div>
+      <a class="btn btn-ghost more reveal" href="https://www.sportskeeda.com/author/lavil-saldanha11-1" target="_blank" rel="noopener">All 786 articles on Sportskeeda ↗</a>
+    </section>
+
+    <!-- Journey -->
+    <section class="wrap section" id="journey" aria-labelledby="journey-h">
+      <div class="head reveal">
+        <p class="kicker k-teal">03 · Journey</p>
+        <h2 id="journey-h">How I got here</h2>
+      </div>
+      <ol class="timeline">
+        <li class="t t1 reveal">
+          <span class="t-when">2021 – 2024</span>
+          <h3>BE, Electrical, Electronics &amp; Communications</h3>
+          <p>Fr. Conceicao Rodrigues College of Engineering, Mumbai. My AI credit-scoring project there became an IEEE paper.</p>
+        </li>
+        <li class="t t2 reveal">
+          <span class="t-when">2020 – 2025</span>
+          <h3>Sportskeeda: writer → commentator</h3>
+          <p>Started as a contributor, grew into live multi-sport commentary, managed a 25-member commentary team and wrote 786 articles.</p>
+        </li>
+        <li class="t t3 reveal">
+          <span class="t-when">2025 – 2027</span>
+          <h3>Master of Data Science &amp; Innovation, UTS</h3>
+          <p>Moved to Sydney. Advanced ML Applications, Big Data Engineering, and a run of deployed ML services. Working part-time in retail alongside.</p>
+        </li>
+        <li class="t t4 reveal">
+          <span class="t-when">Next</span>
+          <h3>Your data team?</h3>
+          <p>Looking for internships, graduate programs and part-time data roles now, and full-time from mid-2027.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Skills -->
+    <section class="wrap section" aria-labelledby="skills-h">
+      <div class="head reveal">
+        <p class="kicker k-amber">04 · Toolkit</p>
+        <h2 id="skills-h">What I work with</h2>
+      </div>
+      <div class="skills reveal">
+        <div class="skill-group g1"><h3>Machine learning</h3><p>scikit-learn · XGBoost · Optuna · Feature engineering · Time series · NLP &amp; embeddings</p></div>
+        <div class="skill-group g2"><h3>Engineering</h3><p>Python · pandas · NumPy · FastAPI · Docker · Git · pytest</p></div>
+        <div class="skill-group g3"><h3>Tools</h3><p>Jupyter · Streamlit · uv · Render · Hugging Face</p></div>
+        <div class="skill-group g4"><h3>People</h3><p>Technical writing · Live commentary · Team leadership</p></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="wrap section" id="contact" aria-labelledby="contact-h">
+      <div class="contact reveal">
+        <h2 id="contact-h">Let's build something.</h2>
+        <p>Data science, ML, data engineering or analyst roles in Sydney: internships, graduate programs, part-time now, full-time from mid-2027. Sports analytics is a bonus.</p>
+        <div class="cta">
+          <a class="btn btn-light" href="https://www.linkedin.com/in/lavil-saldanha/" target="_blank" rel="noopener">Message me on LinkedIn</a>
+          <a class="btn btn-outline-light" href="https://github.com/Lavil88" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="year">2026</span> Lavil Saldanha · Sydney · Built by hand, no frameworks.</p>
+  </footer>
+</body>
+</html>
