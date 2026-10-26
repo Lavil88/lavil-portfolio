@@ -2,7 +2,7 @@
 
 My personal portfolio site: the ML projects I've built at UTS, my IEEE paper, and four years of cricket writing at Sportskeeda, on one colourful page.
 
-**Live:** deployed on Vercel (link in the repo's About section)
+**Live:** https://lavil-portfolio.vercel.app
 
 ![Preview](assets/og-image.png)
 
